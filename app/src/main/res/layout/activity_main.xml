@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    android:orientation="vertical"
+    android:id="@+id/root_layout"
+    tools:context="org.procodingtools.idealsportscenter.activities.MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:id="@+id/logo"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/full_logo_white"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/btns_layout"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="115dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/custom_ripple"
+                        app:cardBackgroundColor="@color/material_green_alpha"
+                        app:cardCornerRadius="10dp"
+                        android:translationZ="3dp"
+                        android:id="@+id/reservation_card"
+                        android:layout_marginRight="50dp"
+                        android:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_reserver"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/reservations"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/list_sourses_card"
+                        android:foreground="@drawable/custom_ripple"
+                        app:cardBackgroundColor="@color/light_red_alpha"
+                        app:cardCornerRadius="10dp"
+                        android:translationZ="3dp"
+                        android:elevation="5dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_list_cours"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/courses_list"
+                                    android:textAlignment="center"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="115dp"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/custom_ripple"
+                        app:cardBackgroundColor="@color/light_blue_alpha"
+                        app:cardCornerRadius="10dp"
+                        android:translationZ="3dp"
+                        android:id="@+id/resume_card"
+                        android:layout_marginRight="50dp"
+                        android:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_resume"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/resume"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        app:cardBackgroundColor="@color/yellow_alpha"
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/news_card"
+                        android:foreground="@drawable/custom_ripple"
+                        android:translationZ="3dp"
+                        android:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_news"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/news"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="115dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/custom_ripple"
+                        app:cardBackgroundColor="@color/dark_gray_alpha"
+                        app:cardCornerRadius="10dp"
+                        android:translationZ="3dp"
+                        android:id="@+id/account_card"
+                        android:layout_marginRight="50dp"
+                        android:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_person"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/account"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        app:cardBackgroundColor="@color/material_light_maroon_alpha"
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/about_card"
+                        android:foreground="@drawable/custom_ripple"
+                        android:translationZ="3dp"
+                        android:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_about"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/about"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
